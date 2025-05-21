@@ -1,0 +1,49 @@
+# Core dependencies
+numpy>=1.22.0
+pandas>=1.5.0
+scipy>=1.10.0
+matplotlib>=3.5.0
+networkx>=3.0
+
+# Physics and simulation
+pint>=0.19.0
+sympy>=1.11.0
+fenics-dolfinx>=0.5.0; platform_system != "Darwin"
+
+# Battery simulation
+pybamm>=23.11; platform_system != "Windows"
+casadi>=3.5.5; platform_system != "Windows"
+
+# Solar cell simulation
+pvlib>=0.9.0
+sunglass>=0.0.3
+
+# Machine learning and AI
+torch>=2.0.0
+einops>=0.6.0
+transformers>=4.30.0
+langchain>=0.0.267
+dspy-ai>=2.0.0
+
+# Acceleration 
+flash-attn>=1.0.0
+xformers>=0.0.20; platform_system != "Darwin"
+
+# API and web interface
+fastapi>=0.104.0
+uvicorn>=0.23.0
+pydantic>=2.4.0
+typer>=0.9.0
+rich>=13.0.0
+plotly>=5.10.0
+
+# Utilities
+prometheus-client>=0.16.0
+tqdm>=4.64.0
+pytest>=7.0.0
+
+# Add other specific dependencies here as your project evolves
+# For example:
+# pandas
+# matplotlib
+# scikit-learn 

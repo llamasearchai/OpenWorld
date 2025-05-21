@@ -1,0 +1,14 @@
+<svg width="320" height="100" viewBox="0 0 320 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Globe Mark -->
+  <g transform="translate(0,10)">
+    <circle cx="40" cy="40" r="30" stroke="black" stroke-width="2"/>
+    <path d="M10,40 a30,30 0 0,0 60,0 a30,10 0 0,0 -60,0" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M40,10 a15,30 0 0,1 0,60 a15,30 0 0,1 0,-60" stroke="black" stroke-width="1.5" fill="none"/>
+    <line x1="10" y1="40" x2="70" y2="40" stroke="black" stroke-width="1"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="90" y="65" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="black" letter-spacing="2">
+    OpenWorld
+  </text>
+</svg>

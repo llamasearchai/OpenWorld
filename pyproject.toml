@@ -1,0 +1,159 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "openworld"
+version = "0.1.0"
+description = "A multi-physics simulation platform with AI integration."
+readme = "README.md"
+requires-python = ">=3.8,<3.12"
+license = "MIT"
+keywords = ["physics", "simulation", "ai", "llm", "battery", "solar", "perovskite", "materials", "science", "openworld"]
+authors = [
+    {name = "Nik Jois", email = "nikjois@llamasearch.ai"},
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "fastapi>=0.105.0",
+    "uvicorn[standard]>=0.25.0",
+    "httpx>=0.25.0",
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.12.0",
+    "psycopg2-binary",
+    "h5py>=3.10.0",
+    "pint>=0.22",
+    "openai>=1.6.0",
+    "langchain>=0.1.5",
+    "langchain-openai>=0.0.5",
+    "langchain-core>=0.1.7",
+    "langchain-community>=0.0.17",
+    "dspy-ai>=2.1.6",
+    "langsmith>=0.0.75",
+    "python-dotenv>=1.0.0",
+    "matplotlib>=3.7.0",
+    "plotly>=5.15.0",
+    "networkx>=3.0",
+    "einops>=0.6.0",
+    "flash-attn>=1.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-benchmark>=4.0.0",
+    "black>=23.12.0",
+    "ruff>=0.1.9",
+    "mypy>=1.7.0",
+    "pre-commit>=3.5.0",
+    "tox>=4.11.0",
+    "sphinx>=7.1.0",
+    "sphinx-rtd-theme>=1.3.0",
+    "nbsphinx>=0.9.0",
+    "ipykernel",
+    "ipywidgets",
+]
+gpu = [
+    "jax>=0.4.23",
+    "jaxlib>=0.4.23",
+]
+viz-extra = [
+    "vtk>=9.2.0",
+    "imageio>=2.31.0",
+    "imageio-ffmpeg>=0.4.0",
+]
+battery = [
+    "pybamm>=22.8",
+    "casadi>=3.5.5",
+]
+solar = [
+    "pvlib>=0.9.0",
+    "sunglass>=0.0.3",
+]
+physics_modules = [
+    "fenics-dolfinx>=0.5.0; platform_system != \"Darwin\"",
+    "meshio>=5.3.0",
+]
+all = [
+    "openworld[dev,gpu,viz-extra,battery,solar,physics_modules]",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/llamasearchai/OpenWorld"
+"Bug Tracker" = "https://github.com/llamasearchai/OpenWorld/issues"
+"Documentation" = "https://openworld.readthedocs.io"
+
+[project.scripts]
+openworld-cli = "openworld.cli.main:app"
+
+[tool.poetry]
+name = "openworld"
+version = "0.1.0"
+description = "A multi-physics simulation platform with AI integration."
+authors = ["Nik Jois <nikjois@llamasearch.ai>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+numpy = "*"
+scipy = "*"
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+typer = {extras = ["all"], version = "*"}
+pint = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+ruff = "*"
+mypy = "*"
+
+[tool.poetry.scripts]
+openworld-cli = "openworld.cli.main:app"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "W", "F", "I", "C", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.black]
+line-length = 88
+target-version = ['py310', 'py311', 'py312']
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.coverage.run]
+branch = true
+source = ["src/openworld"]
+
+[tool.coverage.report]
+fail_under = 70
+show_missing = true 
