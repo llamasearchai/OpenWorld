@@ -1,7 +1,7 @@
 <div align="center">
   <img src="openworld.svg" alt="OpenWorld Logo" width="250"/>
 
-  <h1>OpenWorld Simulation Platform 🌍</h1>
+  <h1>OpenWorld Simulation Platform</h1>
 
   <p>
     <strong>A cutting-edge, multi-physics simulation platform for advanced research and development.</strong>
@@ -16,21 +16,21 @@
   </p>
 </div>
 
-## ✨ Why OpenWorld?
+## Why OpenWorld?
 
 OpenWorld stands out as a comprehensive and extensible platform designed to tackle complex simulation challenges across various scientific and engineering domains. Whether you are researching advanced AI agents, developing new sustainable energy technologies, or exploring fundamental physics, OpenWorld provides the tools and flexibility you need.
 
-*   **🚀 High Performance:** Built with performance in mind, leveraging optimized libraries and algorithms.
-*   **🧩 Modularity:** Easily extend and customize components to fit your specific research needs.
-*   **🤖 AI-Powered:** Integrated AI agent framework for creating intelligent systems that can learn and interact within simulated environments.
-*   **🌐 Multi-Physics:** Simulate interactions between different physical domains, such as mechanical, solar, and electrochemical systems.
-*   **🤝 Open Source:** A community-driven project with a commitment to open collaboration and knowledge sharing.
+*   **High Performance:** Built with performance in mind, leveraging optimized libraries and algorithms.
+*   **Modularity:** Easily extend and customize components to fit your specific research needs.
+*   **AI-Powered:** Integrated AI agent framework for creating intelligent systems that can learn and interact within simulated environments.
+*   **Multi-Physics:** Simulate interactions between different physical domains, such as mechanical, solar, and electrochemical systems.
+*   **Open Source:** A community-driven project with a commitment to open collaboration and knowledge sharing.
 
-## 🌟 Features
+## Features
 
 OpenWorld offers a rich set of features for advanced simulation:
 
-*   **🧱 Modular Core Components:**
+*   **Modular Core Components:**
     *   **Physics Engine:**
         *   Robust 3D rigid-body dynamics.
         *   Multiple collision detection algorithms (GJK, Sweep and Prune, BVH).
@@ -48,23 +48,23 @@ OpenWorld offers a rich set of features for advanced simulation:
         *   Reasoning engine for decision-making and task execution.
         *   Memory components for state tracking and learning.
         *   Integration with simulation tools for environment interaction.
-*   **📡 Flexible API:**
+*   **Flexible API:**
     *   FastAPI-based server for creating, managing, and running simulations.
     *   Endpoints for AI reasoning, data retrieval, and visualization.
     *   Well-documented schemas for easy integration.
-*   **💻 Command-Line Interface (CLI):**
+*   **Command-Line Interface (CLI):**
     *   Typer-based CLI for convenient interaction with the platform.
     *   Manage simulations, run experiments, and query system status.
-*   **🏗️ Extensible Architecture:**
+*   **Extensible Architecture:**
     *   Designed for seamless integration of new physics models, AI algorithms, and simulation domains.
     *   Clear interfaces and abstractions for developers.
-*   **📏 Unit System:**
+*   **Unit System:**
     *   Integrated unit handling using the `pint` library to ensure dimensional consistency and prevent errors.
-*   **📊 Visualization Tools (Planned):**
+*   **Visualization Tools (Planned):**
     *   Integration with popular plotting libraries (e.g., Matplotlib, Plotly).
     *   Web-based dashboard for real-time simulation monitoring and results analysis.
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 OpenWorld is built using a modern and robust technology stack:
 
@@ -86,9 +86,9 @@ OpenWorld is built using a modern and robust technology stack:
 *   **Testing:** Pytest, Coverage.py
 *   **Packaging:** Poetry
 
-## 🗺️ Project Structure
+## Project Structure
 
-A brief overview of the project\'s layout:
+A brief overview of the project's layout:
 
 ```
 OpenWorld/
@@ -113,14 +113,14 @@ OpenWorld/
 ├── .github/                  # GitHub specific files (e.g., workflow actions)
 ├── .gitignore                # Specifies intentionally untracked files
 ├── Dockerfile                # For building Docker container images
-├── LICENSE                   # Project\'s MIT License
+├── LICENSE                   # Project's MIT License
 ├── openworld.svg             # The awesome project logo
 ├── pyproject.toml            # Project metadata and build config (Poetry)
 ├── README.md                 # This file: Your guide to OpenWorld
 └── requirements.txt          # Python package dependencies (can be generated from pyproject.toml)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to get OpenWorld up and running on your local machine.
 
@@ -141,9 +141,9 @@ Follow these steps to get OpenWorld up and running on your local machine.
 2.  **Create and activate a virtual environment (highly recommended):**
     ```bash
     python -m venv .venv
-    source .venv/bin/activate  # On Windows: .venv\\Scripts\\activate
+    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
     ```
-    *We recommend naming your virtual environment `.venv` as it\'s a common standard and often recognized by IDEs.*
+    *We recommend naming your virtual environment `.venv` as it's a common standard and often recognized by IDEs.*
 
 3.  **Install dependencies using Poetry (recommended for development):**
     OpenWorld uses [Poetry](https://python-poetry.org/) for dependency management and packaging.
@@ -178,7 +178,7 @@ poetry run openworld-cli physics-create --help
 ```
 If not using Poetry, you might need to ensure the package is in your PYTHONPATH or call it via `python -m openworld.cli.main`.
 
-## 🧪 Showcase & Examples
+## Showcase & Examples
 
 Explore practical examples and Jupyter notebooks in the `examples/` directory to see OpenWorld in action:
 
@@ -188,9 +188,9 @@ Explore practical examples and Jupyter notebooks in the `examples/` directory to
     *   `battery_simulation_example.py`: Example of battery discharge simulation.
 *   `examples/notebooks/`: Jupyter notebooks for more interactive demonstrations and tutorials (to be added).
 
-We encourage you to run these examples to get a feel for the platform\'s capabilities.
+We encourage you to run these examples to get a feel for the platform's capabilities.
 
-## 🛣️ Roadmap
+## Roadmap
 
 We have an exciting vision for the future of OpenWorld! Here are some of the features and improvements we are planning:
 
@@ -205,33 +205,33 @@ We have an exciting vision for the future of OpenWorld! Here are some of the fea
 
 Stay tuned for updates, and feel free to suggest features by opening an issue!
 
-## 🙌 Contributing
+## Contributing
 
-Contributions are the lifeblood of open source! We warmly welcome contributions from the community to make OpenWorld even better. Whether it\'s bug fixes, new features, documentation improvements, or new examples, your help is appreciated.
+Contributions are the lifeblood of open source! We warmly welcome contributions from the community to make OpenWorld even better. Whether it's bug fixes, new features, documentation improvements, or new examples, your help is appreciated.
 
 Please follow these steps:
 
 1.  **Fork the repository** on GitHub.
 2.  **Clone your fork** locally: `git clone https://github.com/YOUR_USERNAME/OpenWorld.git`
 3.  **Create a new branch** for your feature or fix: `git checkout -b feature/your-amazing-feature` or `bugfix/issue-tracker-id`.
-4.  **Make your changes** and commit them with clear, descriptive messages: `git commit -m \'feat: Add amazing new feature\'`. (We loosely follow [Conventional Commits](https://www.conventionalcommits.org/))
+4.  **Make your changes** and commit them with clear, descriptive messages: `git commit -m 'feat: Add amazing new feature'`. (We loosely follow [Conventional Commits](https://www.conventionalcommits.org/))
 5.  **Push your changes** to your fork: `git push origin feature/your-amazing-feature`.
 6.  **Open a Pull Request (PR)** against the `main` branch of `llamasearchai/OpenWorld`.
 
-Please ensure your code adheres to the project\'s coding standards (run linters/formatters if configured) and includes appropriate tests for new functionality.
+Please ensure your code adheres to the project's coding standards (run linters/formatters if configured) and includes appropriate tests for new functionality.
 
-## 💬 Community and Support
+## Community and Support
 
 *   **GitHub Issues:** Have a bug to report or a feature to request? Please [open an issue](https://github.com/llamasearchai/OpenWorld/issues).
 *   **GitHub Discussions:** (If enabled) For general questions, ideas, and community discussions.
 *   **Stay Updated:** Watch the repository on GitHub to get notified of new releases and updates.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 Copyright (c) 2025 Nik Jois and OpenWorld Contributors.
 
-## 🧑‍💻 Author & Maintainers
+## Author & Maintainers
 
 *   **Nik Jois** ([@nikjois](https://github.com/nikjois)) - Initial Creator (nikjois@llamasearch.ai)
 
@@ -241,4 +241,4 @@ We are looking for active maintainers and contributors! If you are passionate ab
 
 <p align="center">
   <em>Empowering the next generation of discovery through simulation.</em>
-</p> 
+</p>
